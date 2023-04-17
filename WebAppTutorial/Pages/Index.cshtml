@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <title>First Page </title>
+    <meta charset= "UTF-8" />
+    <meta name="viewport"  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 id="hello_world" class="display-4 green-text" onmouseover="newColor()" onmouseout="oldColor()">Hello, World</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+    <div class="video">
+        <p>Well this is my first webpage tutorial on visual studio, so bare with me!</p>
+        <p class="p1">
+            Im going to display a music video from youtube and customize the element of this page and a little of javascript. <br />
+            Here is this space video:
+        </p>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/EL2XOIVzvlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br />
+        <p> Awesome right?!</p>
+    </div>
+
+    <p><button onclick="myMove()">Click Me</button></p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+</body>
+
